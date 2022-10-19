@@ -2,6 +2,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,600&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -69,4 +71,36 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html *,
+body * {
+  box-sizing: inherit;
+}
+
+/*
+This file is used to contain all vendor imports.
+*/
+/*
+This file is used to contain all component imports.
+Files inside this folder should contain all styles relating
+to a reusable component.
+*/
+.container {
+  display: block;
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 1080px;
+}
+
+/*
+This file is used to contain all layout imports.
+Files inside this folder should contain all styles relating
+to layouts.
+*//*# sourceMappingURL=styles.css.map */
