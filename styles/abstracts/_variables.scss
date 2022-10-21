@@ -3,17 +3,20 @@ $bodyFont  : 'Open Sans';
 $captionFont : 'Open Sans' 600 italic;
 
 // Font Sizing
+$HeroFontSize      : 90px;
 $bodyFontSize      : 16px;
 $baseLineHeight    : 1.5;
 $headingLineHeight : 1.2;
 
 // Colors
-$black : rgb(1, 1, 1);
-$red   : #d52b1e;
-$blue  : #00a1de;
+$black: #212121;
+$white: #f0f0f0;
+
+$light-yellow: #F5E0B1;
+$dark-yellow: #D9A53F;
 
 // Spacing
-$pad : 1rem;
+$pad : 2rem;
 
 // Breakpoints
 $smallBreakpoint : 600px;

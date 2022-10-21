@@ -95,7 +95,7 @@ to a reusable component.
 .container {
   display: block;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
   max-width: 1080px;
 }
 
@@ -103,4 +103,84 @@ to a reusable component.
 This file is used to contain all layout imports.
 Files inside this folder should contain all styles relating
 to layouts.
-*//*# sourceMappingURL=styles.css.map */
+*/
+header {
+  width: 100%;
+  margin: auto;
+  font-family: "Open Sans";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #212121;
+  color: #F5E0B1;
+  font-weight: 600;
+  height: 6rem;
+}
+header .material-symbols-rounded {
+  font-size: 40px;
+  position: fixed;
+  right: 30px;
+  top: 10px;
+  display: block;
+}
+@media (min-width: 600px) {
+  header .material-symbols-rounded {
+    display: none;
+  }
+}
+header .logo {
+  margin-left: 2rem;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #F5E0B1;
+  display: inline;
+}
+header nav ul.show {
+  display: block;
+}
+header .sidenav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background-color: #212121;
+  transform: translateX(102%);
+  transition: transform 0.35s ease;
+  z-index: 10;
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.25);
+}
+@media (min-width: 600px) {
+  header .sidenav {
+    display: none;
+  }
+}
+header .sidenav.open {
+  overflow: auto;
+  transform: translateX(0rem);
+}
+header ul {
+  margin: 6rem 0 0;
+}
+header ul li a {
+  margin: 0.5rem 0;
+  padding: 1rem 1rem;
+  transition: transform 0.35s ease;
+}
+
+#desktop-nav {
+  display: none;
+}
+@media (min-width: 600px) {
+  #desktop-nav {
+    display: block;
+  }
+}
+#desktop-nav ul {
+  display: flex;
+  font-size: 1.8rem;
+}
+#desktop-nav li {
+  padding-right: 4rem;
+}/*# sourceMappingURL=styles.css.map */
