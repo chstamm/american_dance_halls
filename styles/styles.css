@@ -180,6 +180,7 @@ header ul li a {
 #desktop-nav ul {
   display: flex;
   font-size: 1.8rem;
+  margin: 0;
 }
 #desktop-nav li {
   padding-right: 4rem;
