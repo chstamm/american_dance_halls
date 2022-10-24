@@ -1,4 +1,3 @@
-
 //Mobile Nav
 
 function setUpNav() {
@@ -6,9 +5,9 @@ function setUpNav() {
   buttons.forEach((element) => {
     let nav = document.querySelector(".sidenav");
     element.addEventListener("click", () => {
-      if (nav.classList.contains("open")) 
-        nav.classList.remove("open");
+      if (nav.classList.contains("open")) nav.classList.remove("open");
       else nav.classList.add("open");
+    
     });
   });
 }
