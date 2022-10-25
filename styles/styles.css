@@ -172,20 +172,61 @@ header ul li a {
   padding: 1rem 1rem;
   transition: transform 0.35s ease;
 }
-
-#desktop-nav {
+header #desktop-nav {
   display: none;
 }
 @media (min-width: 600px) {
-  #desktop-nav {
+  header #desktop-nav {
     display: block;
   }
 }
-#desktop-nav ul {
+header #desktop-nav ul {
   display: flex;
   font-size: 1.8rem;
   margin: 0;
 }
-#desktop-nav li {
+header #desktop-nav li {
   padding-right: 4rem;
+}
+
+.hero .desktop-hero {
+  display: none;
+  background-image: url(/images/music-hall-hero-background.jpg);
+  max-height: 730px;
+  display: flex;
+}
+@media (min-width: 600px) {
+  .hero .desktop-hero {
+    display: block;
+  }
+}
+.hero .desktop-hero img {
+  max-width: 500px;
+}
+.hero .mobile-hero {
+  background-image: url(/images/mobile-hero-800px.jpg);
+  background-position: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 550px;
+  text-align: center;
+}
+@media (min-width: 600px) {
+  .hero .mobile-hero {
+    display: none;
+  }
+}
+.hero .mobile-hero img {
+  max-width: 400px;
+  height: auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.hero .mobile-hero h1 {
+  color: white;
+  font-family: "Yeseva One", cursive;
+  font-size: 46px;
+  padding-right: 3rem;
+  padding-left: 3rem;
 }/*# sourceMappingURL=styles.css.map */

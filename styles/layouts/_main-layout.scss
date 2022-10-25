@@ -52,19 +52,17 @@ header {
       overflow: auto;
       transform: translateX(0rem);
     }
-    
+  }
+  ul {
+    margin: 6rem 0 0;
+    font-size: 1.8rem;
+    li {
+      padding: 2rem;
     }
-    ul {
-      margin: 6rem 0 0;
-      font-size: 1.8rem;
-      li {
-        padding: 2rem;
-      }
-      li a {
-        margin: 0.5rem 0;
-        padding: 1rem 1rem;
-        transition: transform 0.35s ease;
-      }
+    li a {
+      margin: 0.5rem 0;
+      padding: 1rem 1rem;
+      transition: transform 0.35s ease;
     }
   }
   #desktop-nav {
@@ -81,4 +79,44 @@ header {
       padding-right: 4rem;
     }
   }
+}
 
+.hero {
+  .desktop-hero {
+    display: none;
+    @include for-tablet-portrait-up {
+      display: block;
+    }
+    background-image: url(/images/music-hall-hero-background.jpg);
+    max-height: 730px;
+    display: flex;
+    img {
+      max-width: 500px;
+    }
+  }
+  .mobile-hero {
+    background-image: url(/images/mobile-hero-800px.jpg);
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 550px;
+    text-align: center;
+    @include for-tablet-portrait-up {
+      display: none;
+    }
+    img {
+      max-width: 400px;
+      height: auto;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+    h1 {
+      color: white;
+      font-family: $headerFont;
+      font-size: 46px;
+      padding-right: 3rem;
+      padding-left: 3rem;
+    }
+  }
+}
