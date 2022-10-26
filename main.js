@@ -10,6 +10,12 @@ function setUpNav() {
     
     });
   });
+  let links = document.getElementsByTagName ("a");
+  links.forEach((link) => {
+    link.addEventListener("click", 
+      nav.classList.remove("open")
+)
+  })
 }
 
 setUpNav();
