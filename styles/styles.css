@@ -92,13 +92,6 @@ This file is used to contain all component imports.
 Files inside this folder should contain all styles relating
 to a reusable component.
 */
-.container {
-  display: block;
-  margin: 0 auto;
-  padding: 0 2rem;
-  max-width: 1080px;
-}
-
 /*
 This file is used to contain all layout imports.
 Files inside this folder should contain all styles relating
@@ -189,11 +182,24 @@ header #desktop-nav li {
   padding-right: 4rem;
 }
 
-.hero .desktop-hero {
-  display: none;
-  background-image: url(/images/music-hall-hero-background.jpg);
-  max-height: 730px;
+.hero .hero-wrapper {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-height: 700px;
+}
+@media (min-width: 900px) {
+  .hero .hero-wrapper {
+    max-height: 800px;
+  }
+}
+.hero .desktop-hero {
+  background: url(/images/music-hall-hero-background.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: none;
 }
 @media (min-width: 600px) {
   .hero .desktop-hero {
@@ -201,7 +207,39 @@ header #desktop-nav li {
   }
 }
 .hero .desktop-hero img {
-  max-width: 500px;
+  width: 250px;
+  height: auto;
+}
+@media (min-width: 900px) {
+  .hero .desktop-hero img {
+    width: 400px;
+    height: auto;
+  }
+}
+.hero .desktop-hero h1 {
+  margin: 0;
+  line-height: 6.5rem;
+  max-width: 300px;
+  color: white;
+  font-family: "Yeseva One", cursive;
+  font-size: 60px;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+@media (min-width: 900px) {
+  .hero .desktop-hero h1 {
+    line-height: 9rem;
+    font-size: 80px;
+    max-width: 400px;
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+@media (min-width: 900px) {
+  .hero .desktop-hero {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
 .hero .mobile-hero {
   background-image: url(/images/mobile-hero-800px.jpg);
