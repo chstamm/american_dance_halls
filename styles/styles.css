@@ -371,4 +371,37 @@ header #desktop-nav li {
   border: none;
   border-radius: 5px;
   background-color: #356D5B;
+}
+
+.Model-Hero model-viewer {
+  max-width: 500px;
+  margin: auto;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+}
+.Model-Hero .modelViewer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem;
+}
+.Model-Hero .modelViewer button.arButton {
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  border-radius: 4px;
+  background-color: #D9A53F;
+}
+.Model-Hero .modelViewer div.arButton {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Model-Hero .modelViewer div.arButton p {
+  font-family: "Open Sans";
+  margin: 0.1rem 0.2rem 0.2rem 0.2rem;
 }/*# sourceMappingURL=styles.css.map */
