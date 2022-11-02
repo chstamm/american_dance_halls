@@ -84,6 +84,11 @@ body * {
   box-sizing: inherit;
 }
 
+main {
+  max-width: 1170px;
+  margin: auto;
+}
+
 /*
 This file is used to contain all vendor imports.
 */
@@ -111,8 +116,7 @@ header {
 }
 header .material-symbols-rounded {
   font-size: 40px;
-  position: fixed;
-  right: 30px;
+  padding-right: 30px;
   top: 10px;
   display: block;
 }
@@ -267,4 +271,104 @@ header #desktop-nav li {
   font-size: 46px;
   padding-right: 3rem;
   padding-left: 3rem;
+}
+
+.home-page {
+  font-family: "Open Sans";
+  color: #212121;
+}
+.home-page .home-tile .tile-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .home-page .home-tile .tile-wrapper {
+    margin-top: 13rem;
+    margin-bottom: 5rem;
+  }
+}
+@media (min-width: 900px) {
+  .home-page .home-tile .tile-wrapper {
+    margin-top: 8rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+.home-page .home-tile .tile-wrapper .desktop-h2 {
+  display: none;
+}
+@media (min-width: 900px) {
+  .home-page .home-tile .tile-wrapper .desktop-h2 {
+    display: block;
+    padding-bottom: 2.4rem;
+    font-size: 4rem;
+    font-weight: 400;
+  }
+}
+.home-page .home-tile .tile-wrapper .mobile-h2 {
+  display: block;
+  padding-top: 4.8rem;
+  padding-bottom: 2.4rem;
+  font-size: 4rem;
+  font-weight: 400;
+}
+@media (min-width: 900px) {
+  .home-page .home-tile .tile-wrapper .mobile-h2 {
+    display: none;
+  }
+}
+.home-page .home-tile .tile-wrapper img {
+  max-width: 574px;
+  height: auto;
+  padding: 0 1.6rem 0 1.6rem;
+}
+.home-page .home-tile .tile-wrapper .mobile-home-img {
+  display: block;
+}
+@media (min-width: 900px) {
+  .home-page .home-tile .tile-wrapper .mobile-home-img {
+    display: none;
+  }
+}
+.home-page .home-tile .tile-wrapper .desktop-home-img {
+  display: none;
+}
+@media (min-width: 900px) {
+  .home-page .home-tile .tile-wrapper .desktop-home-img {
+    display: block;
+  }
+}
+.home-page .home-tile .tile-wrapper .paragraph {
+  max-width: 574px;
+  height: auto;
+  padding: 2.8rem 1.6rem 1.6rem 1.6rem;
+}
+@media (min-width: 1200px) {
+  .home-page .home-tile .tile-wrapper .paragraph {
+    min-width: 574px;
+  }
+}
+@media (min-width: 900px) {
+  .home-page .home-tile .tile-wrapper .paragraph {
+    max-width: 300px;
+  }
+}
+.home-page .home-tile .tile-wrapper .paragraph p {
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+.home-page .home-tile .tile-wrapper .paragraph button {
+  margin: 1.6rem 0 1.6rem 0;
+  min-width: 150px;
+  min-height: 40px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: #356D5B;
 }/*# sourceMappingURL=styles.css.map */

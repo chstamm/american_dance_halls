@@ -12,8 +12,8 @@ header {
 
   .material-symbols-rounded {
     font-size: 40px;
-    position: fixed;
-    right: 30px;
+    //position: fixed;
+    padding-right: 30px;
     top: 10px;
     display: block;
     @include for-tablet-portrait-up {
@@ -83,7 +83,7 @@ header {
 
 .hero {
   .hero-wrapper {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -96,7 +96,8 @@ header {
     @include for-tablet-portrait-up {
       display: block;
     }
-    background: url(/images/music-hall-hero-background.jpg) no-repeat center center;
+    background: url(/images/music-hall-hero-background.jpg) no-repeat center
+      center;
     background-size: cover;
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -154,6 +155,95 @@ header {
       font-size: 46px;
       padding-right: 3rem;
       padding-left: 3rem;
+    }
+  }
+}
+
+.home-page {
+  font-family: $bodyFont;
+  color: $black;
+  .home-tile {
+    .tile-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      @include for-desktop-up {
+        margin-top: 13rem;
+        margin-bottom: 5rem;
+      }
+      @include for-tablet-landscape-up {
+        margin-top: 8rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      align-items: center;
+      .desktop-h2 {
+        display: none;
+        @include for-tablet-landscape-up {
+          display: block;
+
+          padding-bottom: 2.4rem;
+          font-size: 4rem;
+          font-weight: 400;
+        }
+      }
+      .mobile-h2 {
+        display: block;
+        padding-top: 4.8rem;
+        padding-bottom: 2.4rem;
+        font-size: 4rem;
+        font-weight: 400;
+
+        @include for-tablet-landscape-up {
+          display: none;
+        }
+      }
+      img {
+        max-width: 574px;
+        height: auto;
+        padding: 0 1.6rem 0 1.6rem;
+      }
+      .mobile-home-img {
+        display: block;
+        @include for-tablet-landscape-up {
+          display: none;
+        }
+      }
+
+      .desktop-home-img {
+        display: none;
+        @include for-tablet-landscape-up {
+          display: block;
+        }
+      }
+      .paragraph {
+        @include for-desktop-up {
+          min-width: 574px;
+        }
+        @include for-tablet-landscape-up {
+          max-width: 300px;
+        }
+        max-width: 574px;
+        height: auto;
+        padding: 2.8rem 1.6rem 1.6rem 1.6rem;
+        p {
+          font-size: 2rem;
+          line-height: 2.8rem;
+        }
+        button {
+          margin: 1.6rem 0 1.6rem 0;
+          min-width: 150px;
+          min-height: 40px;
+          font-size: 1.6rem;
+          font-weight: 600;
+          text-transform: uppercase;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          background-color: $dark-green;
+        }
+      }
     }
   }
 }
