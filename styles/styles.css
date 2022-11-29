@@ -406,6 +406,43 @@ header #desktop-nav li {
   margin: 0.1rem 0.2rem 0.2rem 0.2rem;
 }
 
+.explore-thumbnails {
+  max-width: 1170px;
+  margin: auto;
+}
+.explore-thumbnails h2 {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 2.8rem;
+  padding: 1.6rem;
+}
+.explore-thumbnails .scrollable {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 4px, 4px;
+  padding: 4px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.explore-thumbnails .scrollable figure {
+  margin: 1rem;
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+}
+.explore-thumbnails .scrollable figure img {
+  min-width: 170px;
+  border-radius: 10px;
+}
+.explore-thumbnails .scrollable figure figcaption {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  text-decoration: underline;
+}
+
 .content-wrapper .content {
   display: flex;
   flex-direction: column;
