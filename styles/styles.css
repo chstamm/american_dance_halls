@@ -373,6 +373,9 @@ header #desktop-nav li {
   background-color: #356D5B;
 }
 
+.Model-Hero {
+  font-family: "Open Sans";
+}
 .Model-Hero model-viewer {
   max-width: 500px;
   margin: auto;
@@ -385,6 +388,7 @@ header #desktop-nav li {
   align-items: center;
   justify-content: space-between;
   margin: 0.5rem;
+  text-align: center;
 }
 .Model-Hero .modelViewer button.arButton {
   color: #f0f0f0;
@@ -405,10 +409,14 @@ header #desktop-nav li {
   font-family: "Open Sans";
   margin: 0.1rem 0.2rem 0.2rem 0.2rem;
 }
+.Model-Hero h1 {
+  padding-left: 1.6rem;
+}
 
 .explore-thumbnails {
   max-width: 1170px;
   margin: auto;
+  padding-top: 6rem;
 }
 .explore-thumbnails h2 {
   font-family: "Open Sans";
@@ -446,8 +454,13 @@ header #desktop-nav li {
 .content-wrapper .content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 0 1.6rem 0 1.6rem;
+  padding-top: 6rem;
+}
+.content-wrapper .content h2 {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 2.8rem;
+  padding: 1.6rem;
 }
 .content-wrapper .content p {
   padding: 1.6rem 1.6rem 0 1.6rem;
