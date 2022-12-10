@@ -8,21 +8,35 @@
         margin: 0 auto;
       }
     .modelViewer {
+      //background-color: $light-green;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin: 0.5rem;
-      text-align: center;
+      flex-direction: column;
+      //padding: 2rem;
+      //text-align: right;
       button.arButton {
         color: $white;
         border: none;
         font-size: 1rem;
         position: absolute;
-        bottom: 1rem;
-        border-radius: 4px;
-        background-color: $dark-yellow;
-      
+        top: 1rem;
+        right: 1rem;
+        border-radius: 20px;
+        background-color: $black;
       }
+     .hall-title{
+      font-size: 4rem;
+        padding: 2rem;
+        color: $white;
+        background-color: $black;
+        width: 100%;
+        h1{
+          max-width: 1170px;
+          margin: auto;
+        }
+     }
+      
       div.arButton {
         padding: 0.5rem 1rem;
         display: flex;

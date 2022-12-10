@@ -1,109 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Holiday Lounge</title>
 
     <!-- Web Scripts -->
     <script type="module" src="../3D-objects/model-viewer.js"></script>
-   
 
-     <!-- Icons -->
-     <link
-     rel="stylesheet"
-     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,400,0,0"
-   />
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,400,0,0"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-   <!-- Fonts Files-->
-   <link rel="preconnect" href="https://fonts.googleapis.com" />
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Fonts Files-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-   <!-- Local Styles -->
-   <link rel="stylesheet" href="../styles/styles.css" />
-</head>
-<body>
+    <!-- Local Styles -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
     <header>
-        <div class="logo"></div>
-        <span class="material-symbols-rounded bars nav-toggle"> menu </span>
-        <nav id="desktop-nav">
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="hamilton.html">Hamilton</a></li>
-            <li><a href="#">Holiday</a></li>
-          </ul>
-        </nav>
-        <nav class="sidenav">
-          <span class="material-symbols-rounded close nav-toggle"> close </span>
-          <ul class="navList">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="hamilton.html">Hamilton</a></li>
-            <li><a href="#">Holiday</a></li>
-          </ul>
-        </nav>
+      <div class="logo"></div>
+      <span class="material-symbols-rounded bars nav-toggle"> menu </span>
+      <nav id="desktop-nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="hamilton.html">Hamilton</a></li>
+          <li><a href="#">Holiday</a></li>
+        </ul>
+      </nav>
+      <nav class="sidenav">
+        <span class="material-symbols-rounded close nav-toggle"> close </span>
+        <ul class="navList">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="hamilton.html">Hamilton</a></li>
+          <li><a href="#">Holiday</a></li>
+        </ul>
+      </nav>
     </header>
     <div class="Model-Hero">
-        <div class="modelViewer">
-            <model-viewer src="../3D-objects/3D-assets/test-jeep/low-poly-jeep2.glb" camera-controls autoplay auto-rotate ar ios-src="../3D-objects/3D-assets/test-jeep/low-poly-jeep2.usdz">
-              <button class="arButton" slot="ar-button">
-                <div class="arButton">
-                  <span class="material-icons">
-                    view_in_ar
-                  </span>
-                <p class="button">
-                  View in AR
-                </p>
-                </div>
-              </button>
-            </model-viewer>
+      <div class="modelViewer">
+        <model-viewer
+          src="../3D-objects/3D-assets/test-jeep/low-poly-jeep2.glb"
+          camera-controls
+          autoplay
+          auto-rotate
+          ar
+          ios-src="../3D-objects/3D-assets/test-jeep/low-poly-jeep2.usdz"
+        >
+          <button class="arButton" slot="ar-button">
+            <div class="arButton">
+              <span class="material-icons"> view_in_ar </span>
+              <!-- <p class="button">View in AR</p> -->
+            </div>
+          </button>
+        </model-viewer>
+       <div class="hall-title">
+        <h1>Holiday Lounge</h1>
+       </div>
+       
       </div>
-      <h1>Holiday Lounge</h1>
+      
     </div>
     <div class="explore-thumbnails">
-        <h2>Explore the Hall</h2>
-        <div class="scrollable">
-          <a href="#">
-            <figure>
-              <img src="http://fakeimg.pl/275x170" alt="">
-              <figcaption>Take the Tour</figcaption>
-            </figure>
-          </a>
-          <a href="#">
-            <figure>
-              <img src="http://fakeimg.pl/275x170" alt="">
-              <figcaption>Watch a Concert</figcaption>
-            </figure>
-          </a>
-          <a href="#">
-            <figure>
-              <img src="http://fakeimg.pl/275x170" alt="">
-              <figcaption>View Image Gallery</figcaption>
-            </figure>
-          </a>
-        </div>  
+      <h2>Explore the Hall</h2>
+      <div class="scrollable">
+        <a href="#">
+          <figure>
+            <img src="http://fakeimg.pl/275x170" alt="" />
+            <figcaption>Take the Tour</figcaption>
+          </figure>
+        </a>
+        <a href="#">
+          <figure>
+            <img src="http://fakeimg.pl/275x170" alt="" />
+            <figcaption>Watch a Concert</figcaption>
+          </figure>
+        </a>
+        <a href="#">
+          <figure>
+            <img src="http://fakeimg.pl/275x170" alt="" />
+            <figcaption>View Image Gallery</figcaption>
+          </figure>
+        </a>
+      </div>
     </div>
     <main class="content-wrapper">
-        <div class="content">
-            <h2>In Its Day</h2>
-            <p>
-              The Holiday Lounge was built by T-Ed Manuel and opened on January 1st, 1958. Being an Entrepeneur and businessman who loved to spend his time in New Orleans, he built many clubs and places for Cajun music, but in the 1950’s, he saw a need for a new dance hall in Mamou. There were young folk that wanted to dance to some rock’n’roll but didn’t have a place to do it.  
-            </p>
-            <p>
-              He built the Holiday as an homage to New Orleans, and it was like a slice of New Orleans in Mamou. Some called it a “mini-Vegas” with its flashing lights and timeless interior. T-Ed pulled out all the stops making the place, decorating it with tropical decals and colors, women in bathing suits, and even decorated the front with a cutout of Govenor Edwards. T-Ed described the place as the place for drunks and pretenders wanting to be someone else.
-            </p>
-            <div class="carousel">
-
-            </div>
-            <p>
-              In his effort to make this a place for everybody, he added a restaurant to the place for people that wanted a quieter night and had the main part of the dance hall for the rowdy and loud crowd. The restaurant part of the Holiday has long since been closed, but the club is still being run by Eugene Manuel, T-Ed's son. T-Ed gave the keys to the place around Eugene’s 18th birthday, and Eugene has been running the place ever since. Eugene stated that everything that was in the lounge was there 60 years ago. Occasionally, he’d bring out the old Jukebox for the older crowd who wanted to feal nostalgic. He said it helped them stay longer than they planned and drink a little more.  
-            </p>
-            <p>
-              The outside of the Holiday was worn out by time and weather and didn’t hold the same timelessness as the interior. It’s been described as a “world within a world” and a “time outside of time,” a “breathing relic of good times gone by.”  
-            </p>
-        </div>
+      <div class="content">
+        <h2>In Its Day</h2>
+        <p>
+          The Holiday Lounge was built by T-Ed Manuel and opened on January 1st,
+          1958. Being an Entrepeneur and businessman who loved to spend his time
+          in New Orleans, he built many clubs and places for Cajun music, but in
+          the 1950’s, he saw a need for a new dance hall in Mamou. There were
+          young folk that wanted to dance to some rock’n’roll but didn’t have a
+          place to do it.
+        </p>
+        <p>
+          He built the Holiday as an homage to New Orleans, and it was like a
+          slice of New Orleans in Mamou. Some called it a “mini-Vegas” with its
+          flashing lights and timeless interior. T-Ed pulled out all the stops
+          making the place, decorating it with tropical decals and colors, women
+          in bathing suits, and even decorated the front with a cutout of
+          Govenor Edwards. T-Ed described the place as the place for drunks and
+          pretenders wanting to be someone else.
+        </p>
+        <div class="carousel"></div>
+        <p>
+          In his effort to make this a place for everybody, he added a
+          restaurant to the place for people that wanted a quieter night and had
+          the main part of the dance hall for the rowdy and loud crowd. The
+          restaurant part of the Holiday has long since been closed, but the
+          club is still being run by Eugene Manuel, T-Ed's son. T-Ed gave the
+          keys to the place around Eugene’s 18th birthday, and Eugene has been
+          running the place ever since. Eugene stated that everything that was
+          in the lounge was there 60 years ago. Occasionally, he’d bring out the
+          old Jukebox for the older crowd who wanted to feal nostalgic. He said
+          it helped them stay longer than they planned and drink a little more.
+        </p>
+        <p>
+          The outside of the Holiday was worn out by time and weather and didn’t
+          hold the same timelessness as the interior. It’s been described as a
+          “world within a world” and a “time outside of time,” a “breathing
+          relic of good times gone by.”
+        </p>
+      </div>
     </main>
     <script src="../main.js"></script>
-</body>
+  </body>
 </html>

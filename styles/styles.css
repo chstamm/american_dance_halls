@@ -308,8 +308,13 @@ header #desktop-nav li {
     font-weight: 400;
   }
 }
+.home-page .home-tile .tile-wrapper .mobile-h2-wrapper {
+  display: flex;
+}
 .home-page .home-tile .tile-wrapper .mobile-h2 {
+  text-align: left;
   display: block;
+  padding-left: 1.6rem;
   padding-top: 4.8rem;
   padding-bottom: 2.4rem;
   font-size: 4rem;
@@ -387,17 +392,28 @@ header #desktop-nav li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0.5rem;
-  text-align: center;
+  flex-direction: column;
 }
 .Model-Hero .modelViewer button.arButton {
   color: #f0f0f0;
   border: none;
   font-size: 1rem;
   position: absolute;
-  bottom: 1rem;
-  border-radius: 4px;
-  background-color: #D9A53F;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 20px;
+  background-color: #212121;
+}
+.Model-Hero .modelViewer .hall-title {
+  font-size: 4rem;
+  padding: 2rem;
+  color: #f0f0f0;
+  background-color: #212121;
+  width: 100%;
+}
+.Model-Hero .modelViewer .hall-title h1 {
+  max-width: 1170px;
+  margin: auto;
 }
 .Model-Hero .modelViewer div.arButton {
   padding: 0.5rem 1rem;
