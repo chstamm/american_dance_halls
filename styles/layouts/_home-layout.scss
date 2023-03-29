@@ -13,7 +13,7 @@
     @include for-tablet-portrait-up {
       display: block;
     }
-    background: url(/images/music-hall-hero-background.jpg) no-repeat center
+    background: url(/images/dance-hall_hero-background-blank.jpg) no-repeat center
       center;
     background-size: cover;
     padding-top: 3rem;
@@ -50,7 +50,7 @@
     display: none;
   }
   .mobile-hero {
-    background-image: url(/images/mobile-hero-800px.jpg);
+    background-image: url(/images/dance-hall-mobile-background.jpg);
     background-position: center;
     display: flex;
     align-items: center;
@@ -63,6 +63,8 @@
     img {
       max-width: 400px;
       height: auto;
+      padding-left: 2rem;
+      padding-right: 2rem;
       padding-top: 5rem;
       padding-bottom: 5rem;
     }

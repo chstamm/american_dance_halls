@@ -199,7 +199,7 @@ header #desktop-nav li {
   }
 }
 .hero .desktop-hero {
-  background: url(/images/music-hall-hero-background.jpg) no-repeat center center;
+  background: url(/images/dance-hall_hero-background-blank.jpg) no-repeat center center;
   background-size: cover;
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -246,7 +246,7 @@ header #desktop-nav li {
   }
 }
 .hero .mobile-hero {
-  background-image: url(/images/mobile-hero-800px.jpg);
+  background-image: url(/images/dance-hall-mobile-background.jpg);
   background-position: center;
   display: flex;
   align-items: center;
@@ -262,6 +262,8 @@ header #desktop-nav li {
 .hero .mobile-hero img {
   max-width: 400px;
   height: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
