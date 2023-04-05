@@ -22,11 +22,10 @@ header {
   
     .logo {
       margin-left: 2rem;
-      height: 30px;
-      width: 30px;
+      max-width: 45px;
+      max-height: Auto;
       border-radius: 50%;
-      background-color: $light-yellow;
-      display: inline;
+      
     }
   
     nav ul.show {

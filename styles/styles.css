@@ -127,11 +127,9 @@ header .material-symbols-rounded {
 }
 header .logo {
   margin-left: 2rem;
-  height: 30px;
-  width: 30px;
+  max-width: 45px;
+  max-height: Auto;
   border-radius: 50%;
-  background-color: #F5E0B1;
-  display: inline;
 }
 header nav ul.show {
   display: block;
