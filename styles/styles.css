@@ -429,6 +429,22 @@ header #desktop-nav li {
   padding-left: 1.6rem;
 }
 
+.hero .image-hero {
+  background: url("/images/la-poussiere-header-imge.jpg") no-repeat center center;
+  height: 300px;
+}
+.hero .hall-title {
+  font-size: 4rem;
+  padding: 2rem;
+  color: #f0f0f0;
+  background-color: #212121;
+  width: 100%;
+}
+.hero .hall-title h1 {
+  max-width: 1170px;
+  margin: auto;
+}
+
 .explore-thumbnails {
   max-width: 1170px;
   margin: auto;

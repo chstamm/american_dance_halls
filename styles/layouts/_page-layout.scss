@@ -1,3 +1,22 @@
+.hero {
+  .image-hero{
+    background: url("/images/la-poussiere-header-imge.jpg")no-repeat center
+    center;
+    height: 300px;
+  }
+  .hall-title{
+    font-size: 4rem;
+      padding: 2rem;
+      color: $white;
+      background-color: $black;
+      width: 100%;
+      h1{
+        max-width: 1170px;
+        margin: auto;
+      }
+   }
+}
+
 .explore-thumbnails {
   max-width: 1170px;
   margin: auto;
