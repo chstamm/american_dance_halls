@@ -10,11 +10,10 @@
 		<meta name="mobile-web-app-capable" content="yes" />
 		<style type="text/css" title="Default">
 			/* fullscreen */
-			html {
-				height:100%;
-			}
 			body {
-				height:100%;
+				background-color: black;
+     			height: 100%;
+        		height: calc(var(--vh, 1vh) * 100);
 				margin: 0px;
 				overflow:hidden; /* disable scrollbars */
 				-webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* remove highlight on tab for iOS/Android */
@@ -28,8 +27,19 @@
     			background-color:  rgba(255,255,255,0.5);
 			}
 		</style>	
+		<link rel="stylesheet" href="../../styles/styles.css" />
 	</head>
 	<body>
+		<header id="VR-tour-header">
+			<div id="link">
+			  <a href="../../hall-pages/la-poussiere.html">
+				<img src="../../images/outline_arrow_back_ios_white_36dp.png" alt="back">
+			  </a>
+			</div>
+			<div id="title">
+			  <h2>La Poussiere</h2>
+			</div>
+		  </header>
 <!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - -->
 		<script type="text/javascript" src="pano2vr_player.js">
 		</script>
@@ -81,5 +91,11 @@
 			<p><b>Please enable Javascript!</b></p>
 		</noscript>
 <!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - --> 
+<script>
+	// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+	let vh = window.innerHeight * 0.01;
+	// Then we set the value in the --vh custom property to the root of the document
+	document.documentElement.style.setProperty("--vh", `${vh}px`);
+  </script>
 	</body>
 </html>

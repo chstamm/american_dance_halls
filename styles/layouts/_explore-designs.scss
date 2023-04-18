@@ -1,0 +1,53 @@
+#VR-tour-header {
+  color: $white;
+  background-color: $black;
+  width: 100%;
+  height: 70px;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  #link {
+    font-size: 3rem;
+    padding-left: 2rem;
+    position: absolute;
+    a {
+      img {
+        max-width: 24px;
+        height: auto;
+      }
+    }
+  }
+  #title {
+    width: 100%;
+    font-size: 2.4rem;
+    text-align: center;
+    h2 {
+      display: inline;
+      font-family: $headerFont;
+      font-weight: 100;
+    }
+  }
+}
+
+#vid-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .contentContainer {
+    margin-top: 4rem;
+    width: 100%;
+    max-width: 680px;
+    margin-bottom: 5rem;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-family: $bodyFont;
+    iframe {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    video {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

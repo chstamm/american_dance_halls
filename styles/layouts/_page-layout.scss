@@ -1,4 +1,13 @@
 .hero {
+  .image-hero-hamilton {
+    background: url("/images/hamiltons-header-image.jpg") no-repeat center center;
+    background-size: 120% auto;
+    height: 200px;
+    @include for-tablet-portrait-up {
+      height: 300px;
+      //width: auto;
+    }
+  }
   .image-hero{
     background: url("/images/la-poussiere-header-imge.jpg")no-repeat center center;
     background-size: 120% auto;
