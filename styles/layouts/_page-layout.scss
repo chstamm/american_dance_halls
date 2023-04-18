@@ -1,8 +1,12 @@
 .hero {
   .image-hero{
-    background: url("/images/la-poussiere-header-imge.jpg")no-repeat center
-    center;
-    height: 300px;
+    background: url("/images/la-poussiere-header-imge.jpg")no-repeat center center;
+    background-size: 120% auto;
+    height: 200px;
+    @include for-tablet-portrait-up {
+      height: 300px;
+      //width: auto;
+    }
   }
   .hall-title{
     font-size: 4rem;
@@ -20,7 +24,7 @@
 .explore-thumbnails {
   max-width: 1170px;
   margin: auto;
-  padding-top: 6rem;
+  padding-top: 3.6rem;
   h2 {
     font-family: $bodyFont;
     font-weight: 300;
@@ -34,23 +38,35 @@
     padding: 4px;
     overflow-x: auto;
     overflow-y: hidden;
+    @include for-tablet-portrait-up {
+      justify-content: space-around;
+    } 
     figure{
       margin: 1rem;
       position: relative;
       text-align: center;
-      //color: white;
       border-radius: 10px;
       font-family: $bodyFont;
-      font-size: 1.6rem;
-      img {
-        min-width: 170px;
+      font-size: 18px;
+      color: $white;
+      font-weight: 1000;
+      .img-scrim {
+        height: 250px;
         border-radius: 10px;
+        background: linear-gradient(rgba(27, 27, 27, 0.8), rgb(27, 27, 27));
+      }
+      img {
+        opacity: 0.5;
+        width: auto;
+        height: 250px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 8px rgba(27, 27, 27, 0.3);
       }
       figcaption {
         position: absolute;
-        bottom: 1rem;
-        left: 1rem;
-        text-decoration: underline;
+        bottom: 1.8rem;
+        left: 1.8rem;
+        //text-decoration: underline;
       }
     }
   }
@@ -58,19 +74,20 @@
 
 
 .content-wrapper {
-
+  margin-bottom: 3.6rem;
   .content {
     display: flex;
     flex-direction: column;
-    padding-top: 6rem;
+    padding-top: 3.6rem;
     h2 {
       font-family: $bodyFont;
     font-weight: 300;
     font-size: 2.8rem;
     padding: 1.6rem;
+    line-height: 1.2;
     }
       p {
-        padding: 1.6rem 1.6rem 0 1.6rem;
+        padding: 1.6rem 1.6rem 0rem 1.6rem;
         font-family: $bodyFont;
         font-size: 2rem;
         line-height: 2.8rem;

@@ -84,27 +84,33 @@
       <div class="scrollable">
         <a href="#">
           <figure>
-            <img src="http://fakeimg.pl/275x170" alt="" />
-            <figcaption>Take the Tour</figcaption>
+            <div class="img-scrim">
+              <img src="../images/poussiere-take-the-tour-img.jpg" alt="La Poussiere Virtual Tour" />
+            </div>
+            <figcaption>Virtual Tour</figcaption>
           </figure>
         </a>
         <a href="#">
           <figure>
-            <img src="http://fakeimg.pl/275x170" alt="" />
-            <figcaption>Watch a Concert</figcaption>
+            <div class="img-scrim">
+              <img src="../images/poussiere-watch-the-video.jpg" alt="La Poussiere Virtual Concert" />
+            </div>
+            <figcaption>360 Concert</figcaption>
           </figure>
         </a>
         <a href="#">
           <figure>
-            <img src="http://fakeimg.pl/275x170" alt="" />
-            <figcaption>View Image Gallery</figcaption>
+            <div class="img-scrim">
+              <img src="../images/poussiere-image-gallery-img.jpg" alt="La Poussiere Image Gallarys" />
+            </div>
+            <figcaption>Image Gallery</figcaption>
           </figure>
         </a>
       </div>
     </div>
     <main class="content-wrapper">
       <div class="content">
-        <h2>In Its Day</h2>
+        <h2>The "Little Cathedral" of Louisiana</h2>
         <p>
           La Poussiere is a Cajun Dancehall which originally opened as a country
           store and bar in the 1920s. By 1955, the owners Ovey and Mary Patin
@@ -122,7 +128,25 @@
           Mouton, Jackie Caillier, Ivy Dugas, Wayne Toups, Steve Riley, and Geno
           Delafose.
         </p>
-        <div class="carousel"></div>
+        <div class="Model-Hero">
+          <div class="modelViewer">
+            <model-viewer
+              src="../3D-objects/3D-assets/la-poussiere-3d-object/2023-louisiana-breaux-bridge-la-poussiere-3d-object-compressed.glb"
+              camera-controls
+              autoplay
+              auto-rotate
+              ar
+              ios-src="../3D-objects/3D-assets/la-poussiere-3d-object/2023-louisiana-breaux-bridge-la-poussiere-3d-object-compressed.usdz"
+            >
+              <button class="arButton" slot="ar-button">
+                <div class="arButton">
+                  <span class="material-icons"> view_in_ar </span>
+                  <!-- <p class="button">View in AR</p> -->
+                </div>
+              </button>
+            </model-viewer>
+          </div>
+        </div>
         <p>
           La Poussiere had its fair share of difficulties staying open, such as
           their original customer base either getting to old to come and dance,
