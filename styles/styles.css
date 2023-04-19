@@ -638,7 +638,7 @@ header #desktop-nav li {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 2rem;
+  padding: 0 2rem 0 2rem;
 }
 #vid-wrapper .textContainer {
   text-align: left;
