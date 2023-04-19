@@ -25,3 +25,22 @@ setUpNav();
 
 // Image Carousal
 
+const scrollLeftBtn = document.getElementById("scroll-left");
+const scrollRightBtn = document.getElementById("scroll-right");
+const galleryWrapper = document.querySelector(".gallery-wrapper");
+
+scrollLeftBtn.addEventListener("click", () => {
+  galleryWrapper.scrollBy(-300, 0);
+});
+
+scrollRightBtn.addEventListener("click", () => {
+  galleryWrapper.scrollBy(300, 0);
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "ArrowLeft") {
+    galleryWrapper.scrollBy(-300, 0);
+  } else if (event.key === "ArrowRight") {
+    galleryWrapper.scrollBy(300, 0);
+  }
+});

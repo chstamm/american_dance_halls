@@ -27,6 +27,9 @@
       font-family: $headerFont;
       font-weight: 100;
     }
+    @include for-phone-only {
+      font-size: 1.8rem;
+    }
   }
 }
 
@@ -67,3 +70,54 @@
 }
 
 // gallery pages
+
+.gallery-container{
+  position: relative;
+  overflow-x: hidden;
+  .gallery-wrapper {
+    display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+    img {
+      flex-shrink: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .scroll-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    button {
+      height: 80px;
+      width: auto;
+      font-size: 8rem;
+      background-color: transparent;
+      border: none;
+      color: #fff;
+    }
+    button:focus {
+      outline: none;
+    }
+  }
+  .gallery-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .gallery-wrapper > * {
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+}
+.gallery-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}

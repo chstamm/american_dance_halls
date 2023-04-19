@@ -621,6 +621,11 @@ footer {
   font-family: "Yeseva One", cursive;
   font-weight: 100;
 }
+@media (max-width: 599px) {
+  #VR-tour-header #title {
+    font-size: 1.8rem;
+  }
+}
 
 #vid-wrapper {
   height: 100vh;
@@ -653,4 +658,56 @@ footer {
   font-size: 1.8rem;
   color: #f0f0f0;
   font-style: italic;
+}
+
+.gallery-container {
+  position: relative;
+  overflow-x: hidden;
+}
+.gallery-container .gallery-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+.gallery-container .gallery-wrapper img {
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+}
+.gallery-container .scroll-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.gallery-container .scroll-buttons button {
+  height: 80px;
+  width: auto;
+  font-size: 8rem;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+.gallery-container .scroll-buttons button:focus {
+  outline: none;
+}
+.gallery-container .gallery-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.gallery-container .gallery-wrapper > * {
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
+
+.gallery-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */
