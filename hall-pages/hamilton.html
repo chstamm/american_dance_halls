@@ -1,133 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hamilton's Place</title>
-  
-     <!-- Web Scripts -->
-     <script type="module" src="../3D-objects/model-viewer.js"></script>
 
-     <!-- Icons -->
-     <link
-       rel="stylesheet"
-       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,400,0,0"
-     />
-     <link
-       href="https://fonts.googleapis.com/icon?family=Material+Icons"
-       rel="stylesheet"
-     />
- 
-     <!-- Fonts Files-->
-     <link rel="preconnect" href="https://fonts.googleapis.com" />
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
- 
-     <!-- Local Styles -->
-     <link rel="stylesheet" href="../styles/styles.css" />
-</head>
-<body>
+    <!-- Web Scripts -->
+    <script type="module" src="../3D-objects/model-viewer.js"></script>
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,400,0,0"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Fonts Files-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Local Styles -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
     <header>
-        <div class="logo">
-          <a href="../index.html">
-            <img src="../images/accordian-icon-100x100.png" alt="accordian logo">
-          </a>
-        </div>
-        <span class="material-symbols-rounded bars nav-toggle"> menu </span>
-        <nav id="desktop-nav">
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="#">Hamilton</a></li>
-            <li><a href="la-poussiere.html">La Poussiere</a></li>
-          </ul>
-        </nav>
-        <nav class="sidenav">
-          <span class="material-symbols-rounded close nav-toggle"> close </span>
-          <ul class="navList">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="#">Hamilton</a></li>
-            <li><a href="la-poussiere.html">La Poussiere</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class="hero">
-        <div class="image-hero-hamilton">
-        </div>
-        <div class="hall-title">
-          <h1>Hamilton's Place</h1>
-         </div>
+      <div class="logo">
+        <a href="../index.html">
+          <img
+            src="../images/accordian-icon-100x100.png"
+            alt="accordian logo"
+          />
+        </a>
       </div>
-      <div class="explore-thumbnails">
-        <h2>Explore the Hall</h2>
-        <div class="scrollable">
-          <a href="../VR-tours/hamiltons-place-vr-tour/index.html">
-            <figure>
-              <div class="img-scrim">
-                <img src="../images/hamiltons-take-the-tour-img.jpg" alt="Hamilton's Place Virtual Tour" />
-              </div>
-              <figcaption>Virtual Tour</figcaption>
-            </figure>
-          </a>
-          <a href="#">
-            <figure>
-              <div class="img-scrim">
-                <img src="../images/hamiltons-listen-to-the-music.jpg" alt="Hamilton's Place Concert Music" />
-              </div>
-              <figcaption>Concert Audio</figcaption>
-            </figure>
-          </a>
-          <a href="#">
-            <figure>
-              <div class="img-scrim">
-                <img src="../images/hamiltons-gallery-img.jpg" alt="La Poussiere Image Gallarys" />
-              </div>
-              <figcaption>Image Gallery</figcaption>
-            </figure>
-          </a>
-        </div>
+      <span class="material-symbols-rounded bars nav-toggle"> menu </span>
+      <nav id="desktop-nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="#">Hamilton</a></li>
+          <li><a href="la-poussiere.html">La Poussiere</a></li>
+        </ul>
+      </nav>
+      <nav class="sidenav">
+        <span class="material-symbols-rounded close nav-toggle"> close </span>
+        <ul class="navList">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="#">Hamilton</a></li>
+          <li><a href="la-poussiere.html">La Poussiere</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="hero">
+      <div class="image-hero-hamilton"></div>
+      <div class="hall-title">
+        <h1>Hamilton's Place</h1>
       </div>
-      <main class="content-wrapper">
-        <div class="content">
-          <h2>The Place for Zydeco</h2>
-          <p>
-            Hamilton’s Place was a Zydeco dance hall built by Adam Hamilton in 1956. Adam also built the farmhouse next to the hall and helped maintain the area around it. The field next to the hall was a popular place where kids could play baseball and hang out. Because of that, the dance hall was a place for all ages. While the kids and teens were hanging out in the club, they kept the liquor covered with sheets. Policemen would come to and help run the club often, and there was also a charity auction event to help someone who was recovering from cancer.
-          </p>
-          <p>
-            Some Zydeco musicians and their bands got their first start here, such as Curly Taylor and their band Zydeco Trouble. Other bands like Zydeco Bad Boys and the Michot Brothers also played there.    
-          </p>
-          <div class="Model-Hero">
-            <div class="modelViewer">
-              <model-viewer
-                src="../3D-objects/3D-assets/hamiltons-place-3d-object/2023-louisiana-lafayette-hamiltons-place-3d-object-compressed.glb"
-                camera-controls
-                autoplay
-                auto-rotate
-                ar
-                ios-src="../3D-objects/3D-assets/hamiltons-place-3d-object/2023-louisiana-lafayette-hamiltons-place-3d-object-compressed.usdz"
-              >
-                <button class="arButton" slot="ar-button">
-                  <div class="arButton">
-                    <span class="material-icons"> view_in_ar </span>
-                    <!-- <p class="button">View in AR</p> -->
-                  </div>
-                </button>
-              </model-viewer>
+    </div>
+    <div class="explore-thumbnails">
+      <h2>Explore the Hall</h2>
+      <div class="scrollable">
+        <a href="../VR-tours/hamiltons-place-vr-tour/index.html">
+          <figure>
+            <div class="img-scrim">
+              <img
+                class="img-small"
+                src="../images/hamiltons-take-the-tour-img.jpg"
+                alt="Hamilton's Place Virtual Tour"
+              />
+              <img
+                class="img-large"
+                src="../images/hamiltons-lg-take-the-tour-img.jpg"
+                alt="Hamilton's Place Virtual Tour"
+              />
+              <img
+                class="img-xl"
+                src="../images/hamiltons-xl-take-the-tour-img.jpg"
+                alt="Hamilton's Place Virtual Tour"
+              />
             </div>
+            <figcaption>Virtual Tour</figcaption>
+          </figure>
+        </a>
+        <a href="#">
+          <figure>
+            <div class="img-scrim">
+              <img
+                class="img-small"
+                src="../images/hamiltons-listen-to-the-music.jpg"
+                alt="Hamilton's Place Concert Music"
+              />
+              <img
+                class="img-large"
+                src="../images/hamiltons-lg-listen-to-the-music.jpg"
+                alt="Hamilton's Place Concert Music"
+              />
+              <img
+                class="img-xl"
+                src="../images/hamiltons-xl-listen-to-the-music.jpg"
+                alt="Hamilton's Place Concert Music"
+              />
+            </div>
+            <figcaption>Concert Audio</figcaption>
+          </figure>
+        </a>
+        <a href="#">
+          <figure>
+            <div class="img-scrim">
+              <img
+                class="img-small"
+                src="../images/hamiltons-gallery-img.jpg"
+                alt="La Poussiere Image Gallarys"
+              />
+              <img
+                class="img-large"
+                src="../images/hamiltons-lg-gallery-img.jpg"
+                alt="Hamilton’s Place Image Gallarys"
+              />
+              <img
+                class="img-xl"
+                src="../images/hamiltons-xl-gallery-img.jpg"
+                alt="Hamilton’s Place Image Gallarys"
+              />
+            </div>
+            <figcaption>Image Gallery</figcaption>
+          </figure>
+        </a>
+      </div>
+    </div>
+    <main class="content-wrapper">
+      <div class="content">
+        <h2>The Place for Zydeco</h2>
+        <p>
+          Hamilton’s Place was a Zydeco dance hall built by Adam Hamilton in
+          1956. Adam also built the farmhouse next to the hall and helped
+          maintain the area around it. The field next to the hall was a popular
+          place where kids could play baseball and hang out. Because of that,
+          the dance hall was a place for all ages. While the kids and teens were
+          hanging out in the club, they kept the liquor covered with sheets.
+          Policemen would come to and help run the club often, and there was
+          also a charity auction event to help someone who was recovering from
+          cancer.
+        </p>
+        <p>
+          Some Zydeco musicians and their bands got their first start here, such
+          as Curly Taylor and their band Zydeco Trouble. Other bands like Zydeco
+          Bad Boys and the Michot Brothers also played there.
+        </p>
+        <div class="Model-Hero">
+          <div class="modelViewer">
+            <model-viewer
+              src="../3D-objects/3D-assets/hamiltons-place-3d-object/2023-louisiana-lafayette-hamiltons-place-3d-object-compressed.glb"
+              camera-controls
+              autoplay
+              auto-rotate
+              ar
+              ios-src="../3D-objects/3D-assets/hamiltons-place-3d-object/2023-louisiana-lafayette-hamiltons-place-3d-object-compressed.usdz"
+            >
+              <button class="arButton" slot="ar-button">
+                <div class="arButton">
+                  <span class="material-icons"> view_in_ar </span>
+                   <p class="button">View in AR</p>
+                </div>
+              </button>
+            </model-viewer>
           </div>
-          <p>
-            William Hamilton took over his father’s hall and ran it himself for a few years and expanded the club. At the end of the hall’s life, the place attracted mostly older people, both black and white, with the younger crowd going elsewhere for their music and dancing. Sometimes the hall would only hold a dance once a month. 
-          </p>
-          <p>
-            Hamilton’s Place closed in 2005 after a Father’s Day event where Geno Delafosse and Keith Frank performed. Over 900 people came to bid the music hall farewell. People remembered this being a place where different cultures from blacks, whites, and Asians could get together and dance. It was a real melting pot.  .
-          </p>
-          <p>
-            The reasons for its closing were because William couldn’t keep it up anymore. His doctor let him know that the drinking and smoking environment wasn’t good for him. It was this and the fact that his children didn’t want to run the place either, so he made up his mind to make it for sale. It wasn’t making the money it used to because he stopped selling liquor there anymore. He stopped due to stricter drinking and driving laws which made him liable for selling too much liquor to people. The bands that came in needed more money to run, and people didn’t want to pay the difference to keep the hall making a profit, especially when they can get this Zydeco music for free at outdoor festivals. Sometimes when they did run the club, depending on how many people.  
-          </p>
-          <p>
-            It’s the end of a culture, and William felt a bit bitter about it. While Zydeco music and culture are evolving, some still mourn the passing of how things used to be and long for those days again.  
-          </p>
         </div>
-      </main>
-      <script src="../main.js"></script>
-</body>
+        <p>
+          William Hamilton took over his father’s hall and ran it himself for a
+          few years and expanded the club. At the end of the hall’s life, the
+          place attracted mostly older people, both black and white, with the
+          younger crowd going elsewhere for their music and dancing. Sometimes
+          the hall would only hold a dance once a month.
+        </p>
+        <p>
+          Hamilton’s Place closed in 2005 after a Father’s Day event where Geno
+          Delafosse and Keith Frank performed. Over 900 people came to bid the
+          music hall farewell. People remembered this being a place where
+          different cultures from blacks, whites, and Asians could get together
+          and dance. It was a real melting pot.
+        </p>
+        <p>
+          The reasons for its closing were because William couldn’t keep it up
+          anymore. His doctor let him know that the drinking and smoking
+          environment wasn’t good for him. It was this and the fact that his
+          children didn’t want to run the place either, so he made up his mind
+          to make it for sale. It wasn’t making the money it used to because he
+          stopped selling liquor there anymore. He stopped due to stricter
+          drinking and driving laws which made him liable for selling too much
+          liquor to people. The bands that came in needed more money to run, and
+          people didn’t want to pay the difference to keep the hall making a
+          profit, especially when they can get this Zydeco music for free at
+          outdoor festivals. Sometimes when they did run the club, depending on
+          how many people.
+        </p>
+        <p>
+          It’s the end of a culture, and William felt a bit bitter about it.
+          While Zydeco music and culture are evolving, some still mourn the
+          passing of how things used to be and long for those days again.
+        </p>
+      </div>
+    </main>
+    <script src="../main.js"></script>
+  </body>
 </html>

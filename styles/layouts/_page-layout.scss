@@ -1,6 +1,7 @@
 .hero {
   .image-hero-hamilton {
-    background: url("/images/hamiltons-header-image.jpg") no-repeat center center;
+    background: url("/images/hamiltons-header-image.jpg") no-repeat center
+      center;
     background-size: 120% auto;
     height: 200px;
     @include for-tablet-portrait-up {
@@ -8,8 +9,9 @@
       //width: auto;
     }
   }
-  .image-hero{
-    background: url("/images/la-poussiere-header-imge.jpg")no-repeat center center;
+  .image-hero {
+    background: url("/images/la-poussiere-header-imge.jpg") no-repeat center
+      center;
     background-size: 120% auto;
     height: 200px;
     @include for-tablet-portrait-up {
@@ -17,17 +19,17 @@
       //width: auto;
     }
   }
-  .hall-title{
+  .hall-title {
     font-size: 4rem;
-      padding: 2rem;
-      color: $white;
-      background-color: $black;
-      width: 100%;
-      h1{
-        max-width: 1170px;
-        margin: auto;
-      }
-   }
+    padding: 2rem;
+    color: $white;
+    background-color: $black;
+    width: 100%;
+    h1 {
+      max-width: 1170px;
+      margin: auto;
+    }
+  }
 }
 
 .explore-thumbnails {
@@ -40,7 +42,7 @@
     font-size: 2.8rem;
     padding: 1.6rem;
   }
-  .scrollable{
+  .scrollable {
     display: flex;
     flex-wrap: nowrap;
     margin: 4px, 4px;
@@ -49,8 +51,11 @@
     overflow-y: hidden;
     @include for-tablet-portrait-up {
       justify-content: space-around;
-    } 
-    figure{
+    }
+    @include for-desktop-up {
+      justify-content: space-between;
+    }
+    figure {
       margin: 1rem;
       position: relative;
       text-align: center;
@@ -71,16 +76,43 @@
         border-radius: 10px;
         box-shadow: 1px 1px 8px rgba(27, 27, 27, 0.3);
       }
+      .img-small {
+        @include for-tablet-landscape-up {
+          display: none;
+        }
+      }
+      .img-large {
+        display: none;
+        @include for-tablet-landscape-up {
+          display: block;
+        }
+        @include for-desktop-up {
+          display: none;
+        }
+      }
+
+      .img-xl {
+        display: none;
+        @include for-tablet-landscape-up {
+          display: none;
+        }
+        @include for-desktop-up {
+          display: block;
+        }
+      }
+
       figcaption {
         position: absolute;
         bottom: 1.8rem;
         left: 1.8rem;
         //text-decoration: underline;
+        @include for-tablet-landscape-up {
+          font-size: 2.4rem;
+        }
       }
     }
   }
 }
-
 
 .content-wrapper {
   margin-bottom: 3.6rem;
@@ -90,16 +122,16 @@
     padding-top: 3.6rem;
     h2 {
       font-family: $bodyFont;
-    font-weight: 300;
-    font-size: 2.8rem;
-    padding: 1.6rem;
-    line-height: 1.2;
+      font-weight: 300;
+      font-size: 2.8rem;
+      padding: 1.6rem;
+      line-height: 1.2;
     }
-      p {
-        padding: 1.6rem 1.6rem 0rem 1.6rem;
-        font-family: $bodyFont;
-        font-size: 2rem;
-        line-height: 2.8rem;
-      }
+    p {
+      padding: 1.6rem 1.6rem 0rem 1.6rem;
+      font-family: $bodyFont;
+      font-size: 2rem;
+      line-height: 2.8rem;
+    }
   }
 }

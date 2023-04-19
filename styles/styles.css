@@ -498,6 +498,11 @@ header #desktop-nav li {
     justify-content: space-around;
   }
 }
+@media (min-width: 1200px) {
+  .explore-thumbnails .scrollable {
+    justify-content: space-between;
+  }
+}
 .explore-thumbnails .scrollable figure {
   margin: 1rem;
   position: relative;
@@ -520,10 +525,46 @@ header #desktop-nav li {
   border-radius: 10px;
   box-shadow: 1px 1px 8px rgba(27, 27, 27, 0.3);
 }
+@media (min-width: 900px) {
+  .explore-thumbnails .scrollable figure .img-small {
+    display: none;
+  }
+}
+.explore-thumbnails .scrollable figure .img-large {
+  display: none;
+}
+@media (min-width: 900px) {
+  .explore-thumbnails .scrollable figure .img-large {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .explore-thumbnails .scrollable figure .img-large {
+    display: none;
+  }
+}
+.explore-thumbnails .scrollable figure .img-xl {
+  display: none;
+}
+@media (min-width: 900px) {
+  .explore-thumbnails .scrollable figure .img-xl {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .explore-thumbnails .scrollable figure .img-xl {
+    display: block;
+  }
+}
 .explore-thumbnails .scrollable figure figcaption {
   position: absolute;
   bottom: 1.8rem;
   left: 1.8rem;
+}
+@media (min-width: 900px) {
+  .explore-thumbnails .scrollable figure figcaption {
+    font-size: 2.4rem;
+  }
 }
 
 .content-wrapper {
@@ -577,25 +618,34 @@ header #desktop-nav li {
 }
 
 #vid-wrapper {
+  height: 100vh;
+  background-color: #212121;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding-top: 2rem;
+  max-width: 1700px;
 }
 #vid-wrapper .contentContainer {
-  margin-top: 4rem;
+  position: relative;
   width: 100%;
-  max-width: 680px;
-  margin-bottom: 5rem;
-  font-size: 1.8rem;
-  line-height: 2.4rem;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+#vid-wrapper .contentContainer .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+#vid-wrapper .textContainer {
+  text-align: left;
+  line-height: 1.4;
+  padding: 2rem;
   font-family: "Open Sans";
-}
-#vid-wrapper .contentContainer iframe {
-  margin-left: auto;
-  margin-right: auto;
-}
-#vid-wrapper .contentContainer video {
-  width: 100%;
-  height: auto;
+  font-size: 1.8rem;
+  color: #f0f0f0;
+  font-style: italic;
 }/*# sourceMappingURL=styles.css.map */
