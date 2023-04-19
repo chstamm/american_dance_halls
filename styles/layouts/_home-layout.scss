@@ -81,7 +81,7 @@
 .home-page {
   font-family: $bodyFont;
   color: $black;
-  margin-bottom: 16rem;
+  margin-bottom: 6.4rem;
   .home-tile {
     max-width: 650px;
       height: auto;
@@ -182,4 +182,11 @@
       }
     }
   }
+}
+
+//Footer Design Used In All Pages
+
+footer{
+  height: 60px;
+  background-color: $black;
 }

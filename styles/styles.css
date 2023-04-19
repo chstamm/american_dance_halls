@@ -276,7 +276,7 @@ header #desktop-nav li {
 .home-page {
   font-family: "Open Sans";
   color: #212121;
-  margin-bottom: 16rem;
+  margin-bottom: 6.4rem;
 }
 .home-page .home-tile {
   max-width: 650px;
@@ -388,6 +388,11 @@ header #desktop-nav li {
   border: none;
   border-radius: 5px;
   background-color: #356D5B;
+}
+
+footer {
+  height: 60px;
+  background-color: #212121;
 }
 
 .Model-Hero {
@@ -568,7 +573,7 @@ header #desktop-nav li {
 }
 
 .content-wrapper {
-  margin-bottom: 3.6rem;
+  margin-bottom: 6.4rem;
 }
 .content-wrapper .content {
   display: flex;
