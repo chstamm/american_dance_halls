@@ -189,4 +189,13 @@
 footer{
   height: 60px;
   background-color: $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  p{
+    color: $white;
+    font-size: 1.6rem;
+    font-family: $bodyFont;
+  }
 }

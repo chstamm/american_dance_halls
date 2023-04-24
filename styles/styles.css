@@ -393,6 +393,15 @@ header #desktop-nav li {
 footer {
   height: 60px;
   background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer p {
+  color: #f0f0f0;
+  font-size: 1.6rem;
+  font-family: "Open Sans";
 }
 
 .Model-Hero {
