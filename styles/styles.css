@@ -679,13 +679,12 @@ footer p {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -ms-overflow-style: none;
-  scrollbar-width: none;
-  scroll-behavior: smooth;
 }
 .gallery-container .gallery-wrapper img {
   flex-shrink: 0;
   width: 100%;
   height: auto;
+  padding: 1.6rem;
 }
 .gallery-container .scroll-buttons {
   position: absolute;
@@ -696,20 +695,21 @@ footer p {
   justify-content: space-between;
 }
 .gallery-container .scroll-buttons button {
-  height: 80px;
-  width: auto;
-  font-size: 8rem;
+  font-size: 6.4rem;
   background-color: transparent;
   border: none;
-  color: #fff;
+  color: #f0f0f0;
+  padding: 0 2.4rem 0 2.4rem;
 }
 .gallery-container .scroll-buttons button:focus {
   outline: none;
 }
-.gallery-container .gallery-wrapper::-webkit-scrollbar {
+
+.gallery-wrapper::-webkit-scrollbar {
   display: none;
 }
-.gallery-container .gallery-wrapper > * {
+
+.gallery-wrapper > * {
   flex-shrink: 0;
   scroll-snap-align: center;
 }
