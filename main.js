@@ -28,10 +28,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   scrollLeftBtn.addEventListener("click", () => {
     galleryWrapper.scrollBy(-300, 0);
+    
   });
 
   scrollRightBtn.addEventListener("click", () => {
     galleryWrapper.scrollBy(300, 0);
+    
   });
 
   document.addEventListener("keydown", (event) => {
