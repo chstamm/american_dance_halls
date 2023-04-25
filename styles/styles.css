@@ -679,6 +679,7 @@ footer p {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -ms-overflow-style: none;
+  scroll-behavior: smooth;
 }
 .gallery-container .gallery-wrapper img {
   flex-shrink: 0;
